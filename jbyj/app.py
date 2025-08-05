@@ -3,7 +3,7 @@ from openai import OpenAI
 
 # Set up OpenAI client for Upstage Solar Pro2
 client = OpenAI(
-    api_key="up_rO5kNk8a7MIDb2bhDfLcs3br0ZRx7",
+    api_key=st.secrets["up_rO5kNk8a7MIDb2bhDfLcs3br0ZRx7"],
     base_url="https://api.upstage.ai/v1"
 )
 
