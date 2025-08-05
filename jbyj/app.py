@@ -3,7 +3,7 @@ from openai import OpenAI
 
 # Set up OpenAI client for Upstage Solar Pro2
 client = OpenAI(
-    api_key=st.secrets["up_rO5kNk8a7MIDb2bhDfLcs3br0ZRx7"],
+    api_key=st.secrets["OPENAI"],
     base_url="https://api.upstage.ai/v1"
 )
 
@@ -40,3 +40,4 @@ if user_input:
                 message_placeholder.markdown(response + "▌")
         message_placeholder.markdown(response)
     st.session_state["messages"].append({"role": "assistant", "content": response})
+
